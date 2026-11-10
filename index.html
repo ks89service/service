@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700;800&family=Kanit:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Schema.org Plumber / LocalBusiness -->
+    <!-- Schema.org Plumber / LocalBusiness (อัปเดตลิงก์ Facebook ตรงระบบจริง) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -51,7 +51,7 @@
         "https://divo.ksservice89.com",
         "https://pipe.ksservice89.com",
         "https://maintenance.ksservice89.com",
-        "https://www.facebook.com/ksservice898",
+        "https://www.facebook.com/ksservice89",
         "http://business.google.com/n/11072600062830195423/profile"
       ],
       "areaServed": [
@@ -60,6 +60,40 @@
         "ศรีนครินทร์", "ลาดกระบัง", "บางจาก", "วัฒนา", "เอกมัย", "พระโขนง", 
         "กิ่งแก้ว", "สำโรง", "ราชาเทวะ", "ราม 2", "บางแก้ว", "หนามแดง", 
         "บางพลี", "สมุทรปราการ"
+      ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ปั๊มน้ำตัดต่อถี่ๆ สาเหตุและวิธีแก้ไขเบื้องต้น?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "มักเกิดจากแรงดันอากาศในถังแรงดันหมด ยางไดอะแฟรมด้านในแตก หรือมีรอยรั่วซึม ส่งผลให้ Pressure Switch สั่งตัดต่อถี่ทุก 2-3 วินาที หรือไม่มีคนใช้น้ำก็ตัดต่อเอง แนะนำตรวจสอบตัวเติมอากาศ (Air Charger) และสวิตช์แรงดัน หากยางถังแรงดันรั่วซึมแนะนำให้เปลี่ยนถังแรงดันใหม่"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "มอเตอร์มีเสียงฮัมแต่ไม่หมุน เกิดจากอะไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "สาเหตุส่วนใหญ่เกิดจากคาปาซิเตอร์ (Capacitor) เสื่อมสภาพ หรือใบพัดติดขัดจากเศษตะกรัน/สนิม เบื้องต้นสามารถใช้ไขควงช่วยหมุนที่แกนท้ายมอเตอร์ หากยังไม่หมุนควรเปลี่ยนคาปาซิเตอร์หรือเรียกช่างเข้าตรวจสอบ"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ดูดน้ำตรงจากท่อประปาโดยไม่มีถังพัก ผิดกฎหมายไหม?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ผิดระเบียบของการประปาทั้ง กปน. และ กปภ. ชัดเจน เนื่องจากจะไปแย่งน้ำเพื่อนบ้าน เสี่ยงดูดสิ่งสกปรกใต้ดิน และทำให้มอเตอร์ไหม้จากการรันตัวเปล่า วิธีการที่ถูกต้องคือต้องติดตั้งถังพักน้ำให้น้ำประปาไหลลงถังก่อน แล้วจึงใช้ปั๊มดูดจากถังจ่ายเข้าสู่ตัวบ้าน"
+          }
+        }
       ]
     }
     </script>
@@ -82,7 +116,7 @@
             background: #090a0c linear-gradient(180deg, #050608 0%, #101318 50%, #07080a 100%) fixed;
             color: #ffffff;
             line-height: 1.45;
-            padding-bottom: 85px;
+            padding-bottom: 95px;
         }
 
         /* ส่วนหัว Header */
@@ -167,7 +201,7 @@
         .btn-call { background: linear-gradient(145deg, #00d659, #00993e); color: #ffffff; }
         .btn-line { background: linear-gradient(145deg, #06c755, #00a838); color: #ffffff; }
 
-        /* การจัดหน้าแบบ 2 ฝั่ง (ซ้ายเนื้อหา 75% / ขวาเมนู 23%) */
+        /* จัดหน้า Layout */
         .main-content-layout {
             display: flex;
             flex-direction: column;
@@ -235,7 +269,7 @@
             font-weight: 900;
         }
 
-        /* แถบด้านขวา: ลอยตามหน้าจอ (Sticky) และขนาดกะทัดรัด */
+        /* แถบด้านขวา: ลอยตามหน้าจอ (Sticky) */
         .sidebar-column {
             position: -webkit-sticky;
             position: sticky;
@@ -256,10 +290,10 @@
         .btn-sub-web {
             background: linear-gradient(135deg, #bf953f, #d4af37, #aa771c);
             color: #0b0c0e;
-            padding: 6px 8px;
+            padding: 7px 9px;
             border-radius: 5px;
             text-decoration: none;
-            font-size: 0.72rem;
+            font-size: 0.74rem;
             font-weight: 800;
             display: flex;
             align-items: center;
@@ -304,7 +338,7 @@
             font-weight: 700;
         }
 
-        /* กล่องคำถามที่พบบ่อย (FAQ) */
+        /* FAQ */
         .faq-box {
             background: rgba(18, 22, 28, 0.92);
             padding: 12px;
@@ -340,7 +374,7 @@
             background: #080a0e;
         }
 
-        /* กล่องพื้นที่ให้บริการ */
+        /* Location */
         .location-box {
             background: rgba(18, 22, 28, 0.92);
             padding: 12px;
@@ -393,7 +427,53 @@
             line-height: 1.4;
         }
 
-        /* ล่างสุด Footer สำหรับ Mobile */
+        /* -------------------------------------------------------------
+           ปุ่มเหรียญทองลอยติดจอ (Floating Gold Coin Facebook)
+           ------------------------------------------------------------- */
+        .fb-floating-coin {
+            position: fixed;
+            bottom: 82px;
+            right: 18px;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #ffe57f 0%, #d4af37 40%, #aa771c 100%);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.65), inset 0 2px 4px rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            z-index: 9999;
+            padding: 3px;
+            border: 2px solid #fff3a8;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            animation: coinPulse 3s infinite ease-in-out;
+        }
+        .fb-floating-coin .coin-inner {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: radial-gradient(circle, #1877f2 60%, #0d5ec4 100%);
+            border: 1.5px dashed rgba(255, 215, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .fb-floating-coin .coin-inner i {
+            color: #ffffff;
+            font-size: 26px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+        }
+        .fb-floating-coin:hover {
+            transform: translateY(-4px) scale(1.08);
+            box-shadow: 0 10px 22px rgba(212, 175, 55, 0.65);
+        }
+        @keyframes coinPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.06); }
+        }
+
+        /* Sticky Footer สำหรับมือถือ */
         .sticky-footer {
             position: fixed;
             bottom: 0;
@@ -431,7 +511,7 @@
             border-top: 1px solid rgba(212, 175, 55, 0.2);
         }
 
-        /* จอคอมพิวเตอร์และแท็บเล็ต (>= 768px) */
+        /* Desktop & Tablet */
         @media (min-width: 768px) {
             .btn-group-hero {
                 flex-direction: row;
@@ -447,6 +527,15 @@
             }
             .sticky-footer {
                 display: none;
+            }
+            .fb-floating-coin {
+                bottom: 25px;
+                right: 25px;
+                width: 64px;
+                height: 64px;
+            }
+            .fb-floating-coin .coin-inner i {
+                font-size: 28px;
             }
             body {
                 padding-bottom: 25px;
@@ -473,10 +562,10 @@
             </div>
         </div>
 
-        <!-- Main Layout (ซ้ายเนื้อหา / ขวาแถบเมนู Sticky) -->
+        <!-- Main Layout (ซ้ายเนื้อหา 75% / ขวาแถบเมนู Sticky 23%) -->
         <div class="main-content-layout">
             
-            <!-- ฝั่งซ้าย: รายการงานบริการหลัก -->
+            <!-- ฝั่งซ้าย: รายการงานบริการ 4 หมวดหมู่ -->
             <div class="services-column">
                 <h2 class="section-title">งานบริการซ่อมและติดตั้งระบบปั๊มน้ำ</h2>
                 <div class="grid">
@@ -528,15 +617,15 @@
                 </div>
             </div>
 
-            <!-- ฝั่งขวา: แถบเครือข่ายบริการ ลอยตามหน้าจอ (Sticky) เล็กกะทัดรัด -->
+            <!-- ฝั่งขวา: แถบเครือข่ายบริการ ลอยตามหน้าจอ (Sticky) -->
             <div class="sidebar-column">
                 <h3 class="section-title" style="font-size: 0.85rem;">เครือข่ายบริการ</h3>
                 <div class="sub-link-sidebar">
                     <a href="http://business.google.com/n/11072600062830195423/profile" target="_blank" rel="noopener" class="btn-sub-web">
-                        <i class="fa-brands fa-google"></i> Google Business Profile
+                        <i class="fa-brands fa-google"></i> Google Profile
                     </a>
                     <a href="https://www.facebook.com/ksservice89" target="_blank" rel="noopener" class="btn-sub-web">
-                        <i class="fa-brands fa-facebook"></i> เพจ Facebook KS Service
+                        <i class="fa-brands fa-facebook"></i> เพจ FB KS Service
                     </a>
                     <a href="https://near-me.ksservice89.com" target="_blank" rel="noopener" class="btn-sub-web">
                         <i class="fa-solid fa-location-crosshairs"></i> ช่างใกล้ฉัน
@@ -545,10 +634,10 @@
                         <i class="fa-solid fa-house"></i> ปั๊มน้ำบ้านพักอาศัย
                     </a>
                     <a href="https://booster.ksservice89.com" target="_blank" rel="noopener" class="btn-sub-web">
-                        <i class="fa-solid fa-industry"></i> Booster Pump อาคาร
+                        <i class="fa-solid fa-industry"></i> Booster อาคาร
                     </a>
                     <a href="https://transfer-pump.ksservice89.com" target="_blank" rel="noopener" class="btn-sub-web">
-                        <i class="fa-solid fa-arrows-up-down"></i> ระบบ Transfer Pump
+                        <i class="fa-solid fa-arrows-up-down"></i> Transfer Pump
                     </a>
                     <a href="https://repair.ksservice89.com" target="_blank" rel="noopener" class="btn-sub-web">
                         <i class="fa-solid fa-gauge-high"></i> ซ่อมเปลี่ยนถังแรงดัน
@@ -560,14 +649,14 @@
                         <i class="fa-solid fa-faucet"></i> งานท่อ PVC & PPR
                     </a>
                     <a href="https://maintenance.ksservice89.com" target="_blank" rel="noopener" class="btn-sub-web">
-                        <i class="fa-solid fa-wrench"></i> บำรุงรักษา PM ปั๊มน้ำ
+                        <i class="fa-solid fa-wrench"></i> บำรุงรักษา PM
                     </a>
                 </div>
 
-                <!-- การ์ดพิเศษสำหรับติดต่อด่วน -->
+                <!-- การ์ดติดต่อช่างด่วน -->
                 <div class="sidebar-card-extra">
-                    <h4>⚡ ปรึกษาช่างหน้างาน</h4>
-                    <p>ปั๊มตัดต่อถี่ มอเตอร์ไม่หมุน สอบถามได้ทันทีครับ</p>
+                    <h4>⚡ระบบปั๊มน้ำมีปัญหา โทรสอบถามหรือเรียกใช้บริการ</h4>
+                    <p>สอบถามแก้ไขปัญหาปั๊มน้ำด้วยตัวเองฟรี โทรศัพท์ถามราคาเรียกใช้บริการตรวจเช็คหน้างาน</p>
                     <a href="tel:0827127490"><i class="fa-solid fa-phone"></i> 082-712-7490</a>
                 </div>
             </div>
@@ -636,6 +725,13 @@
             <p style="margin-top: 4px;">โทร: <strong>082-712-7490</strong> | LINE: <strong>082-712-7490</strong></p>
         </footer>
     </div>
+
+    <!-- ปุ่มเหรียญทอง Facebook ลอยหน้าจอ (กดแล้วเปิดไปที่ https://www.facebook.com/ksservice89 ทันที) -->
+    <a href="https://www.facebook.com/ksservice89" target="_blank" rel="noopener" class="fb-floating-coin" title="เปิดเพจ Facebook เคเอส เซอร์วิส 89">
+        <div class="coin-inner">
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+    </a>
 
     <!-- ปุ่มโทรด่วนสำหรับมือถือด้านล่าง -->
     <div class="sticky-footer">
